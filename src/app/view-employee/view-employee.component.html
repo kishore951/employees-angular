@@ -1,0 +1,39 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Employee Code</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Salary</th>
+                    <th scope="col">Company</th>
+                    <th scope="col">Date of Joining</th>
+                    <th scope="col">Experience</th>
+                    <th scope="col">Designation</th>
+                    <th scope="col">Date Of birth</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of viewEmployee">
+                    
+                    <td>{{i.id}}</td>
+                    <td>{{i.employeeCode}}</td>
+                    <td>{{i.name}}</td>
+                    <td>{{i.address}}</td>
+                    <td>{{i.salary}}</td>
+                    <td>{{i.company}}</td>
+                    <td>{{i.dateOfJoining}}</td>
+                    <td>{{i.experiance}}</td>
+                    <td>{{i.designation}}</td>
+                    <td>{{i.dob}}</td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
