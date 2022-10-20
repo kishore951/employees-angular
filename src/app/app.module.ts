@@ -6,17 +6,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
+import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 
 const appRoutes:Routes=[
 {
   path:"",component:AddEmployeeComponent
+},
+{
+  path:"view",component:ViewEmployeeComponent
 }
 ]
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    AddEmployeeComponent
+    AddEmployeeComponent,
+    ViewEmployeeComponent
   ],
   imports: [
     BrowserModule,
